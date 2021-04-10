@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { Heading } from './';
 
 test('renders learn react link', () => {
-  render(<Heading />);
+  render(<Heading>Hello</Heading>);
   const linkElement = screen.getByText(/Hello/i);
   expect(linkElement).toBeInTheDocument();
 });
