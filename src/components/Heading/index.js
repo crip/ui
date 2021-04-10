@@ -25,7 +25,7 @@ const types = {
 
 const allowedTypes = Object.keys(types);
 
-export const Heading = ({ as }) => {
+export const Heading = ({ as, children }) => {
   if (!allowedTypes.includes(as)) {
     throw Error(`Heading of ${as} is not allowed`);
   }
@@ -35,7 +35,7 @@ export const Heading = ({ as }) => {
 
   return (
     <>
-      <Head className={classNames}>Hello</Head>
+      <Head className={classNames}>{children}</Head>
     </>
   );
 };
