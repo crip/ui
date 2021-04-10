@@ -1,0 +1,37 @@
+module.exports = {
+  purge: ['./src/components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    colors: {
+      main: '#3b007f',
+      'main-dark': '#24124d',
+      secondary: '#22eaaa',
+      light: '#f3f7fc',
+      note: '#fff0cc',
+      blue: '#0063ff',
+      indigo: '#6610f2',
+      purple: '#876cff',
+      pink: '#ff3e7f',
+      red: '#e93d3d',
+      orange: '#ff6f00',
+      yellow: '#f1da09',
+      green: '#37ca37',
+      teal: '#17cfbc',
+      cyan: '#17a2b8',
+      white: '#fff',
+      gray: '#6c757d',
+      'gray-dark': '#343a40',
+      primary: '#0063ff',
+      success: '#37ca37',
+      info: '#17cfbc',
+      warning: '#f1da09',
+      danger: '#e93d3d',
+      dark: '#0c0c0c',
+    },
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};
