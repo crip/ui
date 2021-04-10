@@ -1,4 +1,3 @@
-import '../../styles/main.css';
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
@@ -36,7 +35,7 @@ export const Heading = ({ as }) => {
 
   return (
     <>
-      <Head classNames={classNames}>Hello</Head>
+      <Head className={classNames}>Hello</Head>
     </>
   );
 };
