@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Heading } from '../src';
+import { Heading, allowedTypes } from '../src';
 
 export default {
   title: 'Crip UI/Heading',
   component: Heading,
-  argTypes: {},
+  decorators: [(story) => <>{story()}</>],
 };
 
-const Template = (args) => <Heading {...args} />;
+const Template = (args) => <Heading {...args}>Crip in Tech</Heading>;
 
 export const Primary = Template.bind({});
 Primary.args = {

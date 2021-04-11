@@ -25,7 +25,7 @@ const types = {
 
 const allowedTypes = Object.keys(types);
 
-export const Heading = ({ as, children }) => {
+const Heading = ({ as, children }) => {
   if (!allowedTypes.includes(as)) {
     throw Error(`Heading of ${as} is not allowed`);
   }
@@ -49,3 +49,5 @@ Heading.defaultProps = {
   as: 'h1',
   // extra: [],
 };
+
+export { Heading, allowedTypes };
